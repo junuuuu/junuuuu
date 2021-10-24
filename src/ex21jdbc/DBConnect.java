@@ -27,11 +27,11 @@ public class DBConnect
 			 */
 			
 			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String id = "hr";
+			String id = "study";
 			String pass = "1234";
 			
 			/*
-			3.DriverManger 클래스의 메서드를 통해 오라클 연결
+			3.DriverManager 클래스의 메서드를 통해 오라클 연결
 			 */
 			Connection con = DriverManager.getConnection(url,id,pass);
 			if(con!=null) {

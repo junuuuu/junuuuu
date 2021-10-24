@@ -1,4 +1,4 @@
-package ex21jdbc;
+ package ex21jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -40,7 +40,7 @@ public class HRSelected
 				ResultSet rs = stmt.executeQuery(sql);
 				/*
 				4.반환된 결과를 갯수만큼 반복한다. next()메서드는 출력할
-				레코드가 있는지 확인할때 사용한다. 만약 남은 레코드가
+				레코드가 있는지 확인할 때 사용한다. 만약 남은 레코드가
 				없다면 false를 반환한다.
 				 */
 				while(rs.next()) {
@@ -73,7 +73,13 @@ public class HRSelected
 			catch(Exception e) {
 				System.out.println("Oracle 연결시 예외발생");
 				e.printStackTrace();
+				
 	
 		}
 	}
 }
+
+/*
+lib파일 경로
+C:\01DevelopKits\oraclexe\app\oracle\product\11.2.0\server\jdbc
+*/
