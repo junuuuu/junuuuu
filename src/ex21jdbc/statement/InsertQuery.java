@@ -20,7 +20,7 @@ public class InsertQuery
 			con = DriverManager.getConnection (
 					"jdbc:oracle:thin:@localhost:1521:xe",
 					"kosmo",
-					"1234");
+					"1234"); 
 		System.out.println("오라클 DB 연결성공");				
 		}
 		catch (ClassNotFoundException e) {
